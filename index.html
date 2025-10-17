@@ -8,166 +8,32 @@
     body { font-family: Arial, sans-serif; margin: 20px; }
     h1 { text-align: center; }
     .question { margin-bottom: 20px; }
-    .question img { max-width: 100px; display: block; margin: 10px 0; }
-    .answers label { display: block; margin: 5px 0; }
-    #submitBtn { display: block; margin: 20px auto; padding: 10px 20px; font-size: 16px; }
-    #result { text-align: center; font-size: 18px; margin-top: 20px; font-weight: bold; }
+    img { max-width: 100px; display: block; margin-top: 10px; }
+    .result { font-weight: bold; font-size: 1.2em; margin-top: 20px; }
+    button { padding: 10px 20px; font-size: 16px; }
 </style>
 </head>
 <body>
 <h1>Illinois DMV Practice Test</h1>
-<form id="dmvTest">
-
-<!-- Question 1 -->
-<div class="question">
-<p>1. What is the legal blood alcohol concentration (BAC) limit for drivers over 21 in Illinois?</p>
-<div class="answers">
-<label><input type="radio" name="q1" value="A"> A) 0.05%</label>
-<label><input type="radio" name="q1" value="B"> B) 0.08%</label>
-<label><input type="radio" name="q1" value="C"> C) 0.10%</label>
-<label><input type="radio" name="q1" value="D"> D) 0.02%</label>
-</div>
-</div>
-
-<!-- Question 2 -->
-<div class="question">
-<p>2. When approaching a school bus that is stopped with its red lights flashing and stop arm extended, you must:</p>
-<div class="answers">
-<label><input type="radio" name="q2" value="A"> A) Slow down and proceed with caution</label>
-<label><input type="radio" name="q2" value="B"> B) Stop only if children are crossing</label>
-<label><input type="radio" name="q2" value="C"> C) Stop regardless of your direction of travel</label>
-<label><input type="radio" name="q2" value="D"> D) Honk to alert the driver</label>
-</div>
-</div>
-
-<!-- Question 3 -->
-<div class="question">
-<p>3. What does a solid yellow line on your side of the road mean?</p>
-<div class="answers">
-<label><input type="radio" name="q3" value="A"> A) Passing is allowed</label>
-<label><input type="radio" name="q3" value="B"> B) No passing allowed</label>
-<label><input type="radio" name="q3" value="C"> C) Passing allowed only during daylight</label>
-<label><input type="radio" name="q3" value="D"> D) Passing allowed if safe</label>
-</div>
-</div>
-
-<!-- Question 4 -->
-<div class="question">
-<p>4. When should you use your headlights?</p>
-<div class="answers">
-<label><input type="radio" name="q4" value="A"> A) Only at night</label>
-<label><input type="radio" name="q4" value="B"> B) When visibility is less than 1,000 feet</label>
-<label><input type="radio" name="q4" value="C"> C) When driving in fog, rain, or snow</label>
-<label><input type="radio" name="q4" value="D"> D) Both B and C</label>
-</div>
-</div>
-
-<!-- Question 5 -->
-<div class="question">
-<p>5. What is the minimum following distance recommended under normal conditions?</p>
-<div class="answers">
-<label><input type="radio" name="q5" value="A"> A) 1 second</label>
-<label><input type="radio" name="q5" value="B"> B) 2 seconds</label>
-<label><input type="radio" name="q5" value="C"> C) 3 seconds</label>
-<label><input type="radio" name="q5" value="D"> D) 5 seconds</label>
-</div>
-</div>
-
-<!-- Question 6 -->
-<div class="question">
-<p>6. If you miss your exit on an interstate, you should:</p>
-<div class="answers">
-<label><input type="radio" name="q6" value="A"> A) Stop and back up carefully</label>
-<label><input type="radio" name="q6" value="B"> B) Make a U-turn</label>
-<label><input type="radio" name="q6" value="C"> C) Continue to the next exit</label>
-<label><input type="radio" name="q6" value="D"> D) Pull over and call for help</label>
-</div>
-</div>
-
-<!-- Question 7 -->
-<div class="question">
-<p>7. What does a flashing red traffic light mean?</p>
-<div class="answers">
-<label><input type="radio" name="q7" value="A"> A) Stop and proceed when safe</label>
-<label><input type="radio" name="q7" value="B"> B) Slow down and proceed</label>
-<label><input type="radio" name="q7" value="C"> C) Stop only if other cars are present</label>
-<label><input type="radio" name="q7" value="D"> D) Treat it as a green light</label>
-</div>
-</div>
-
-<!-- Question 8 -->
-<div class="question">
-<p>8. When parallel parking, your vehicle should be within how many inches of the curb?</p>
-<div class="answers">
-<label><input type="radio" name="q8" value="A"> A) 6 inches</label>
-<label><input type="radio" name="q8" value="B"> B) 12 inches</label>
-<label><input type="radio" name="q8" value="C"> C) 18 inches</label>
-<label><input type="radio" name="q8" value="D"> D) 24 inches</label>
-</div>
-</div>
-
-<!-- Question 9 -->
-<div class="question">
-<p>9. What should you do if your car begins to skid?</p>
-<div class="answers">
-<label><input type="radio" name="q9" value="A"> A) Brake hard immediately</label>
-<label><input type="radio" name="q9" value="B"> B) Steer in the direction you want the front wheels to go</label>
-<label><input type="radio" name="q9" value="C"> C) Accelerate to regain traction</label>
-<label><input type="radio" name="q9" value="D"> D) Turn the wheel sharply in the opposite direction</label>
-</div>
-</div>
-
-<!-- Question 10 -->
-<div class="question">
-<p>10. In Illinois, when must you signal before turning or changing lanes?</p>
-<div class="answers">
-<label><input type="radio" name="q10" value="A"> A) At least 50 feet before</label>
-<label><input type="radio" name="q10" value="B"> B) At least 100 feet before</label>
-<label><input type="radio" name="q10" value="C"> C) At least 200 feet before</label>
-<label><input type="radio" name="q10" value="D"> D) Only when traffic is heavy</label>
-</div>
-</div>
-
-<!-- Additional questions 11-25 -->
-<div class="question">
-<p>11. What does this sign mean?</p>
-<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgc3R5bGU9ImZpbGw6cmVkOyIvPjwvc3ZnPg==" alt="Stop Sign">
-<div class="answers">
-<label><input type="radio" name="q11" value="A"> A) Stop</label>
-<label><input type="radio" name="q11" value="B"> B) Yield</label>
-<label><input type="radio" name="q11" value="C"> C) No entry</label>
-<label><input type="radio" name="q11" value="D"> D) Do not stop</label>
-</div>
-</div>
-
-<!-- Continue adding questions similarly -->
-
-<!-- Questions 12-25 would follow similar structure with text or embedded images -->
-
-<button type="button" id="submitBtn">Submit Answers</button>
+<form id="quizForm">
+<div class="question"><p>1. What is the legal blood alcohol concentration (BAC) limit for drivers over 21 in Illinois?</p><label><input type="radio" name="q0" value="0"> 0.05%</label><br><label><input type="radio" name="q0" value="1"> 0.08%</label><br><label><input type="radio" name="q0" value="2"> 0.10%</label><br><label><input type="radio" name="q0" value="3"> 0.02%</label><br></div><div class="question"><p>2. When approaching a school bus that is stopped with its red lights flashing and stop arm extended, you must:</p><label><input type="radio" name="q1" value="0"> Slow down and proceed with caution</label><br><label><input type="radio" name="q1" value="1"> Stop only if children are crossing</label><br><label><input type="radio" name="q1" value="2"> Stop regardless of your direction of travel</label><br><label><input type="radio" name="q1" value="3"> Honk to alert the driver</label><br></div><div class="question"><p>3. What does a solid yellow line on your side of the road mean?</p><label><input type="radio" name="q2" value="0"> Passing is allowed</label><br><label><input type="radio" name="q2" value="1"> No passing allowed</label><br><label><input type="radio" name="q2" value="2"> Passing allowed only during daylight</label><br><label><input type="radio" name="q2" value="3"> Passing allowed if safe</label><br></div><div class="question"><p>4. When should you use your headlights?</p><label><input type="radio" name="q3" value="0"> Only at night</label><br><label><input type="radio" name="q3" value="1"> When visibility is less than 1,000 feet</label><br><label><input type="radio" name="q3" value="2"> When driving in fog, rain, or snow</label><br><label><input type="radio" name="q3" value="3"> Both B and C</label><br></div><div class="question"><p>5. What is the minimum following distance recommended under normal conditions?</p><label><input type="radio" name="q4" value="0"> 1 second</label><br><label><input type="radio" name="q4" value="1"> 2 seconds</label><br><label><input type="radio" name="q4" value="2"> 3 seconds</label><br><label><input type="radio" name="q4" value="3"> 5 seconds</label><br></div><div class="question"><p>6. If you miss your exit on an interstate, you should:</p><label><input type="radio" name="q5" value="0"> Stop and back up carefully</label><br><label><input type="radio" name="q5" value="1"> Make a U-turn</label><br><label><input type="radio" name="q5" value="2"> Continue to the next exit</label><br><label><input type="radio" name="q5" value="3"> Pull over and call for help</label><br></div><div class="question"><p>7. What does a flashing red traffic light mean?</p><label><input type="radio" name="q6" value="0"> Stop and proceed when safe</label><br><label><input type="radio" name="q6" value="1"> Slow down and proceed</label><br><label><input type="radio" name="q6" value="2"> Stop only if other cars are present</label><br><label><input type="radio" name="q6" value="3"> Treat it as a green light</label><br></div><div class="question"><p>8. When parallel parking, your vehicle should be within how many inches of the curb?</p><label><input type="radio" name="q7" value="0"> 6 inches</label><br><label><input type="radio" name="q7" value="1"> 12 inches</label><br><label><input type="radio" name="q7" value="2"> 18 inches</label><br><label><input type="radio" name="q7" value="3"> 24 inches</label><br></div><div class="question"><p>9. What should you do if your car begins to skid?</p><label><input type="radio" name="q8" value="0"> Brake hard immediately</label><br><label><input type="radio" name="q8" value="1"> Steer in the direction you want the front wheels to go</label><br><label><input type="radio" name="q8" value="2"> Accelerate to regain traction</label><br><label><input type="radio" name="q8" value="3"> Turn the wheel sharply in the opposite direction</label><br></div><div class="question"><p>10. In Illinois, when must you signal before turning or changing lanes?</p><label><input type="radio" name="q9" value="0"> At least 50 feet before</label><br><label><input type="radio" name="q9" value="1"> At least 100 feet before</label><br><label><input type="radio" name="q9" value="2"> At least 200 feet before</label><br><label><input type="radio" name="q9" value="3"> Only when traffic is heavy</label><br></div><div class="question"><p>11. What does this sign mean?</p><label><input type="radio" name="q10" value="0"> Stop</label><br><label><input type="radio" name="q10" value="1"> Yield</label><br><label><input type="radio" name="q10" value="2"> Do Not Enter</label><br><label><input type="radio" name="q10" value="3"> No Parking</label><br></div><div class="question"><p>12. What does this sign mean?</p><label><input type="radio" name="q11" value="0"> Yield</label><br><label><input type="radio" name="q11" value="1"> Stop</label><br><label><input type="radio" name="q11" value="2"> Merge</label><br><label><input type="radio" name="q11" value="3"> No U-turn</label><br></div><div class="question"><p>13. What does this sign indicate?</p><label><input type="radio" name="q12" value="0"> Railroad Crossing</label><br><label><input type="radio" name="q12" value="1"> Hospital Ahead</label><br><label><input type="radio" name="q12" value="2"> School Zone</label><br><label><input type="radio" name="q12" value="3"> Pedestrian Crossing</label><br></div><div class="question"><p>14. What does this sign mean?</p><label><input type="radio" name="q13" value="0"> No Left Turn</label><br><label><input type="radio" name="q13" value="1"> No U-turn</label><br><label><input type="radio" name="q13" value="2"> No Right Turn</label><br><label><input type="radio" name="q13" value="3"> Do Not Enter</label><br></div><div class="question"><p>15. What does this sign indicate?</p><label><input type="radio" name="q14" value="0"> Merge</label><br><label><input type="radio" name="q14" value="1"> Lane Ends</label><br><label><input type="radio" name="q14" value="2"> Two-Way Traffic</label><br><label><input type="radio" name="q14" value="3"> Detour</label><br></div><div class="question"><p>16. What does this sign indicate?</p><label><input type="radio" name="q15" value="0"> School Zone</label><br><label><input type="radio" name="q15" value="1"> Playground</label><br><label><input type="radio" name="q15" value="2"> Pedestrian Crossing</label><br><label><input type="radio" name="q15" value="3"> Hospital</label><br></div><div class="question"><p>17. What should you do at a four-way stop?</p><label><input type="radio" name="q16" value="0"> Yield to the vehicle on your left</label><br><label><input type="radio" name="q16" value="1"> Yield to the vehicle on your right</label><br><label><input type="radio" name="q16" value="2"> Go first if you arrive last</label><br><label><input type="radio" name="q16" value="3"> Ignore other vehicles</label><br></div><div class="question"><p>18. When driving in fog, you should use:</p><label><input type="radio" name="q17" value="0"> High beams</label><br><label><input type="radio" name="q17" value="1"> Low beams</label><br><label><input type="radio" name="q17" value="2"> Parking lights only</label><br><label><input type="radio" name="q17" value="3"> Hazard lights</label><br></div><div class="question"><p>19. What is the penalty for driving without insurance in Illinois?</p><label><input type="radio" name="q18" value="0"> $100 fine</label><br><label><input type="radio" name="q18" value="1"> $500 fine and license suspension</label><br><label><input type="radio" name="q18" value="2"> $50 fine</label><br><label><input type="radio" name="q18" value="3"> Warning only</label><br></div><div class="question"><p>20. When are you allowed to turn right on red?</p><label><input type="radio" name="q19" value="0"> Never</label><br><label><input type="radio" name="q19" value="1"> Only when a sign permits</label><br><label><input type="radio" name="q19" value="2"> After stopping and ensuring it's safe</label><br><label><input type="radio" name="q19" value="3"> Only during daylight</label><br></div><div class="question"><p>21. What does a broken white line mean?</p><label><input type="radio" name="q20" value="0"> No passing allowed</label><br><label><input type="radio" name="q20" value="1"> Passing allowed when safe</label><br><label><input type="radio" name="q20" value="2"> Lane ends ahead</label><br><label><input type="radio" name="q20" value="3"> Stop ahead</label><br></div><div class="question"><p>22. What should you do if an emergency vehicle approaches with lights and sirens?</p><label><input type="radio" name="q21" value="0"> Speed up to get out of the way</label><br><label><input type="radio" name="q21" value="1"> Pull over to the right and stop</label><br><label><input type="radio" name="q21" value="2"> Continue driving</label><br><label><input type="radio" name="q21" value="3"> Stop in the middle of the road</label><br></div><div class="question"><p>23. When driving in Illinois, you must dim your headlights within how many feet of an oncoming vehicle?</p><label><input type="radio" name="q22" value="0"> 200 feet</label><br><label><input type="radio" name="q22" value="1"> 300 feet</label><br><label><input type="radio" name="q22" value="2"> 500 feet</label><br><label><input type="radio" name="q22" value="3"> 1000 feet</label><br></div><div class="question"><p>24. What is the minimum age to obtain a full Illinois driver’s license?</p><label><input type="radio" name="q23" value="0"> 16</label><br><label><input type="radio" name="q23" value="1"> 17</label><br><label><input type="radio" name="q23" value="2"> 18</label><br><label><input type="radio" name="q23" value="3"> 21</label><br></div><div class="question"><p>25. What does a diamond-shaped sign indicate?</p><label><input type="radio" name="q24" value="0"> School zone</label><br><label><input type="radio" name="q24" value="1"> Warning</label><br><label><input type="radio" name="q24" value="2"> Regulatory</label><br><label><input type="radio" name="q24" value="3"> Information</label><br></div>
+<button type="button" onclick="calculateScore()">Submit</button>
+<div class="result" id="result"></div>
 </form>
-<div id="result"></div>
-
 <script>
-document.getElementById('submitBtn').addEventListener('click', function() {
-    var correctAnswers = {
-        q1: 'B', q2: 'C', q3: 'B', q4: 'D', q5: 'C',
-        q6: 'C', q7: 'A', q8: 'B', q9: 'B', q10: 'B',
-        q11: 'A'
-        // Add correct answers for q12 to q25 here
-    };
+function calculateScore() {
+    var correctAnswers = [1,2,1,3,2,2,0,1,1,1,0,0,0,1,0,0,1,1,1,2,1,1,2,2,1];
     var score = 0;
-    var total = 25;
-    for (var q in correctAnswers) {
-        var radios = document.getElementsByName(q);
-        for (var i = 0; i < radios.length; i++) {
-            if (radios[i].checked && radios[i].value === correctAnswers[q]) {
+    for (var i = 0; i < correctAnswers.length; i++) {
+        var radios = document.getElementsByName('q' + i);
+        for (var j = 0; j < radios.length; j++) {
+            if (radios[j].checked && parseInt(radios[j].value) === correctAnswers[i]) {
                 score++;
             }
         }
     }
-    document.getElementById('result').textContent = 'You scored ' + score + ' out of ' + total;
-});
+    document.getElementById('result').innerText = 'You scored ' + score + ' out of ' + correctAnswers.length;
+}
 </script>
 </body>
 </html>
